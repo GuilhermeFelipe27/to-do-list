@@ -1,8 +1,9 @@
-const express = require('express')
-const router = express.Router()
+const router = require("express").Router();  // permite a criação de rotas e a modularização
 
-const { listTasks } = require('../controllers/tasks.controller')
+const {
+  listTasks,
+} = require("../controllers/tasks.controller");
 
-router.get("/", listTasks)
+router.get("/", listTasks);
 
 module.exports = router;

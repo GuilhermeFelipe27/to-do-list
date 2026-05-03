@@ -1,11 +1,13 @@
-const tasks = require('../data/mock')
+//CONTROLLER É O MÉTODO DA ROTA
+
+const tasks = require("../data/mock");
+
+// LISTAR TAREFAS
+const listTasks = async (req, res) => {
+  return res.render("index");
+};
 
 
-const listTasks = async (req,res) => {
-    // const name = tasks.name;
-    // const status = tasks.status;
 
-    res.status(200).json(tasks)
-}
-
-module.exports = { listTasks }
+module.exports = { listTasks };
+ 

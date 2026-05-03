@@ -9,7 +9,10 @@
 </head>
 
 <body>
-    <h1>Lista de Tarefas</h1>
+    <form method="post" action="/create"> <!-- método post, executa a ação no caminho /create -->
+        <input type="text" placeholder="Digite uma tarefa..." id="task" name="task">
+        <button type="submit" id="addTask" >Adicionar Tarefa</button>
+    </form>
 
     <script src="script.js"></script>
 </body>

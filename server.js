@@ -4,5 +4,5 @@ const path = require("path"); // responsável por direcionar as pastas
 const PORT = 3333;
 
 app.listen(PORT, () =>
-  console.log(`API rodando em http://localhost:${PORT}/tasks`),
+  console.log(`API rodando em http://localhost:${PORT}`),
 );
